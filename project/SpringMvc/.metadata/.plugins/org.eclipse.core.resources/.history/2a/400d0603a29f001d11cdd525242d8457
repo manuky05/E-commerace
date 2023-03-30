@@ -1,0 +1,34 @@
+package com.mantuIT.SpringMvcCrudUsingDataJpa.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.mantuIT.SpringMvcCrudUsingDataJpa.model.User;
+import com.mantuIT.SpringMvcCrudUsingDataJpa.service.UserServiceI;
+
+@Controller
+public class UserController {
+	@Autowired
+	private UserServiceI userServiceI;
+	
+	@GetMapping("/welcome")
+	public String loadform (){
+		
+		
+		return "welcome";
+	}
+	@PostMapping("/saveUser")
+	public String saveUser(User user) {
+		
+		User saveUser = userServiceI.saveUser( user);
+		if(saveUser!=null) {
+			return "Useruccess";
+		}else {
+		return "RegiFail";
+		
+	}
+
+}
+}

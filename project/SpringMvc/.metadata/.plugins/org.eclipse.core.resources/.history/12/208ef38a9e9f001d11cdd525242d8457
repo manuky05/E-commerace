@@ -1,0 +1,5 @@
+package com.mantuIT.SpringMvcCrudUsingDataJpa.service;
+
+public interface UserServiceI {
+
+}

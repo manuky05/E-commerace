@@ -1,0 +1,5 @@
+package com.BikkadIT.RestApiCrudOperation1.service;
+
+public interface EmployeeServiceI {
+
+}

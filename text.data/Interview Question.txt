@@ -1,0 +1,225 @@
+TCS interview que(first round) 
+1.what work will you done in your project
+2.which build tool tool is used
+3.what you can do at the time of build you project
+4.tell me the build and deployment in you project
+5.which http methods are used in project
+6.by which method request send to the client
+Tech Mahindra Questions
+1.Difference between war and er?
+2.Difference between local and remote repository?
+3.Internal working of hashmap
+4.difference between rest controller and controller?
+5.what is web container in MVC?
+6.Tell me about the role of session in MVC request?
+7.difference between hashmap and treemap
+8.what is atomic integer? Have you used it in project?
+9.what are the starter dependency in springboot?
+10.Tell the git commands you know?
+11.java 8 features?
+12.what is added in date and the timeApi?
+13.difference between stream Api and collection?
+14.functional interface?
+NeoSoft Mumbai
+
+* Which collections you have used in your project
+* which list collections you have used
+* What is arraylist & linkedlist
+* which classes available in Object class
+* what is deff betwn hash code & equals method
+* How can you create any object final
+* Deff betwn String, StringBuffer, StringBuilder
+* Java 1.8 features
+* which stram api userd in project 
+* function of Map in stream map
+* Project Arcitactur which you have used in project
+* Which database you used
+* how to connect with data JPA
+* Which feature of Spring use to create Object
+* @SpringBootApplication anotation
+* Deff btwn JPA & Hibernate
+* Deff btwn JDBC & Hibernate
+* Restmethods in project
+* Deff btwn POST & GET method
+* Response status code
+* what is optional & where you used
+* Wh…
+NeoSoft pune
+Interviewed by : Khushboo Agarwal
+
+* What is your project
+* what actual work you did in project
+* which modules you developed and explain those modules
+* diff betn heap and stack memory and how stack works
+* Instance and Method variabes difrance
+* which java version used
+* additions in java 8
+* Java 1.8 features
+* what is FI and how to use it 
+* lambda exp and how to use it
+* write a method to fetch employees which name start with letter "a" by using java 8
+* .equals and == in object class
+* .equals and == in String class diffrance
+* collections you have used in your project
+* name spring boot annotations used 
+* explain @SpringBootApplication anotation
+* diff betn @controller & @restcontroller
+* what is dipendancy injection
+* types of DI
+* what is spring profiles
+Pratiti Tech, Pune
+ * Find 2nd Largest Number from an Array without using any Java inbuilt methods.
+Input : array ={11,55,2,56,55,77,65,77,66};
+Output: 66
+
+* How to create a RESTful Service offering to find out All Employees from the database.
+Employee service to have URI and HTTP methods.
+Retrieve all Employees - @GetMapping(“/employees”)
+
+* Find 3rd highest salary from table
+
+* what is hibernate
+* deff between hibernate & JPA
+* deff between authntication & authorization
+* life cycle of Bean
+* what is load & get method in hibernate
+* what is pradicate & consumer
+* what is sequntial & parilal stream 
+* what is default method in java 8
+* what is try with resources
+* what is factory design factory
+* what is singleton design pattern 
+* what is restAPI
+* Deff between QueryParameter & PathParameter
+* what is OutOfMemory error
+Globocom logical Question
+
+implementat Immutable function for given code..........
+
+
+class final Employee {
+
+private final Map<String, boolean> skills;
+
+Employee(){
+
+
+}
+
+}
+
+Employee e = new Employee ();
+
+e.getSkills();
+
+---------------------------------
+Get output........
+
+HashTable<String,string> ht= new Hashtable();
+
+String str=null;
+
+ht.put(str,"Java");
+
+------------------------------------------
+
+write a query for find the 3rd highest salary from emp
+Ved Gaikwad
+............................................................................................
+First Round		Date : 19.01.2023 Time :
+Company Name :GloboCom @Mumbai
+-------------------------------------------------------------------------------------
+Duration 15-20 min
+-------------------------------------------------------------------------------------
+-One Project What Exactly you are Doing in Project
+-What Compay Exactly Doing in Project Enhancment or Development ?
+-can method return the Object in java?
+- are you work on ePayment Module ?
+-SessionScope ?
+-in Hashmap == operator sucessfully run prog or giving Compile time error ? 
+-Spring MVC Purpose ?
+-How work IOC ?
+-Autowiring Limitations
+-HashMap & HashTable
+-Schema & Table
+-Trigger & Events
+-…
+Mphasis 1st round interview questions....(19/01/23)
+
+* what is immutability
+* how can we create immutable class
+* diff betwn this & super keyword
+* failFast & failsafe
+* what is exception propagation
+* which class is by default imprted in all java classes
+* which class is parent class of all java class
+* which package Object class avilable
+* what is loombook & its dependency
+* what is devtool & its dependency
+* what is bydirectinal & unidirectinal mapping
+* OntToMany mapping with example
+* what is swagger & dependency which have to add
+* can we customized our own documents & how?
+* if we have 100 api then how can we see all api in one document
+* how can we see swagger documents in screen
+* RestTemplet & its used
+* java 8 related changes
+* whats changes done …
+KPI Technologies 
+Questions 
+1. Which project you worked.
+2. Your contribution in different modules.
+3. Design pattern followed to build the modules.
+4. How do you implemented Security in your application. 
+5. 1st and 2nd level cache applications and difference.
+6. Work flow in hibernate, when we fetch any data.
+7. JIRA related questions. 
+8. Retrospective meetings in agile.
+9. @ Springboot Application uses.
+10. Code for Singleton class object, related to project module.
+11. Tables you have created in your project.
+And mapping between those multiple tables.
+12. How will you handle the Server side error, while accessing the third party API.
+NEOSOFT:-
+24.1.23
+5.00 pm
+
+1.tell me about your project
+2.technology used in your project
+3.implementation of hashset
+4.comparable and comparator diffrence
+5.diff btn hibernate and jpa
+6.diff betn restcontroller and controller anotation
+7.diff betn request param and path variable
+8.how to handle exceptions
+9.diff betn spring and springboot
+10.can we use multiple database in our project.
+11.equals method and hashcode contract.
+12.can abstract class have constructor.
+13.can catch block be empty.
+14.java 8 features.
+15.stream api operations.
+16. what is intermediate operation.
+17.which java version you used.
+18.what is @autowired
+NeoSoft mumbai
+Interviewed by : Kunal bavare
+
+*differance between arryalist and linkedlist 
+* which collection unique And preserved 
+* Singloton design Pattern 
+* Spring boot Flow
+* @Restcontroller Use
+* eagar and lazy loading
+* Cascading
+*  what is HCl 
+* try with resources 
+* differance betn stream api and collection Api
+* @Transactional Use 
+* Transient use
+* Resttemplet
+* Internal working of Hashmap
+* write program and count the String which length greater than  3
+* Intermediate And Terminal Operations
+*Can we perform  Intermidate operations simultaneously
+*Write program To and use in that Two terminal operations

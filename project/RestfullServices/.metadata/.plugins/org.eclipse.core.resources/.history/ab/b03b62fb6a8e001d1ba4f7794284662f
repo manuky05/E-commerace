@@ -1,0 +1,5 @@
+package com.BikkadIT.SendingDataFromPostMan.service;
+
+public class StudentServiceI {
+
+}

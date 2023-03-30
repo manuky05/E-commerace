@@ -1,0 +1,17 @@
+package StringJoinerExample;
+
+import java.util.StringJoiner;
+
+public class StringjoinerDemo {
+
+	public static void main(String[] args) {
+		
+		StringJoiner s=new StringJoiner("#");
+		s.add("ranju kumari");
+		s.add("khetibari");
+		s.add("dhanauti");
+		s.add("housewife");
+		System.out.println(s);
+	}
+
+}

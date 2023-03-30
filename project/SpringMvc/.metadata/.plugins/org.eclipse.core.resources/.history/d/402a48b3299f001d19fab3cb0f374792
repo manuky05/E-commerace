@@ -1,0 +1,36 @@
+package com.mantuIT.UiToContrtoller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import com.mantuIT.UiToContrtoller.controller.Student;
+
+@Controller
+public class StudentController {
+	
+	
+	@GetMapping("/stuform")
+	public  String  stuform() {
+		
+		
+		
+		return "stuRegi";
+		
+	}
+	
+	@PostMapping("/saveStudent")
+	public String saveStudent( Student student,Model model) {
+		
+		model.addAttribute("Student", student);
+		
+		
+		return "studentSuccess" ;
+		
+	}
+	
+	
+	
+	
+}

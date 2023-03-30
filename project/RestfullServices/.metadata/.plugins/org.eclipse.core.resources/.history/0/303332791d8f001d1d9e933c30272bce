@@ -1,0 +1,5 @@
+package com.BikkadIT.RestApiCrudOperation.repository;
+
+public interface EmployreeRepository {
+
+}

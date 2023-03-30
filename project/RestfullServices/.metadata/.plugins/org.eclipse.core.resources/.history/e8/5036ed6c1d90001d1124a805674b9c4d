@@ -1,0 +1,16 @@
+package com.BikkadIT.RestApiCrudOperation.service;
+
+import java.util.List;
+
+import com.BikkadIT.RestApiCrudOperation.model.Employee;
+
+public interface EmployeeServicreI {
+	
+	public boolean saveEmployee(Employee emp);
+	public Boolean saveAllEmployee(List<Employee> list);
+	public List<Employee> getAllEmployee();
+	public Employee  getByEmployeeIdQueryParam(int empId);
+	public Employee  getByEmployeeIdPathParam(int empId);
+	public Employee getByEmployeeRequestBody(Employee emp);
+
+}

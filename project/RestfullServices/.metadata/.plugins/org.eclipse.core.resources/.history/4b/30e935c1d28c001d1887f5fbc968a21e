@@ -1,0 +1,54 @@
+package com.BikkadIT.model.JavaToJsonObject;
+
+import com.BikkadIT.model.Customer;
+import com.BikkadIT.model.InsurancePolicy;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JavaToJson {
+	public static void main(String[] args) throws JsonProcessingException {
+		
+		
+		InsurancePolicy insurancePolicy =new InsurancePolicy();
+		
+		insurancePolicy.setPolicyname("Jivan Jayoti");
+		insurancePolicy.setStartDate("04/06/2022");
+		insurancePolicy.setEndDate("05/06/2023");
+		insurancePolicy.setPremiumAmt(1245.00);
+		
+
+		insurancePolicy.setPolicyname("LiC");
+        insurancePolicy.setStartDate("25/06/2022");
+        insurancePolicy.setEndDate("24/06/2024");
+        insurancePolicy.setPremiumAmt(2015.00);
+		
+		System.out.println(insurancePolicy);
+		
+		
+		
+		Customer customer=new Customer();
+		
+		customer.setCustomerName("Nitan");
+		customer.setCustomerAge(25);
+		customer.setCustomerEmail("abr@gmsil.com");
+		customer.setCustomerId(101);
+		
+		customer.setCustomerName("Ramsaran");
+		customer.setCustomerAge(35);
+		customer.setCustomerEmail("r@gmsil.com");
+		customer.setCustomerId(102);
+		
+		System.out.println(customer);
+		
+		ObjectMapper objectMapper=new ObjectMapper();
+		String json = objectMapper.writeValueAsString(customer);
+		System.out.println(json);
+		
+		
+		
+		
+		
+		
+	}
+
+}
