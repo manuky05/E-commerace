@@ -8,13 +8,21 @@ import com.mantu.electronic.store.ElectronicStore.helper.Helper;
 import com.mantu.electronic.store.ElectronicStore.repositories.UserRepository;
 import com.mantu.electronic.store.ElectronicStore.services.UserService;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -26,6 +34,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+    @Value("@{user.profile.image.path}")
+    private String imagePath;
+    private Logger logger= LoggerFactory.getLogger("UserServiceImpl.class");
 
     @Override
     public UserDto createUSer(UserDto userDto) {
@@ -50,18 +61,29 @@ public class UserServiceImpl implements UserService {
 
         User updatedUser = this.userRepository.save(user);
         UserDto userDto1 =entityToDto(updatedUser);
-
-
         return this.modelMapper.map(userDto1,UserDto.class);
-
-
     }
 
     @Override
     public void deleteUser(String userId) {
-//       User user=this.userRepository.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User","user Id","userId"));
         User user=this.userRepository.findById(userId).orElseThrow(()-> new RuntimeException("User not found"));
-       this.userRepository.delete(user);
+       //delete user progile image
+        // images/user/abc.png
+        String fullPath = imagePath + user.getImageName();
+        try {
+
+            Path path = Paths.get(fullPath);
+            Files.delete(path);
+
+        }catch(NoSuchFileException ex) {
+            logger.info("User Image not found in folder!!");
+            ex.printStackTrace();
+        }catch(IOException e){
+            e.printStackTrace();
+
+        }
+
+       userRepository.delete(user);
     }
 
 
@@ -125,18 +147,7 @@ public class UserServiceImpl implements UserService {
     public List<UserDto> searchUser(String keyword) {
         List<User> users = userRepository.findByNameContaining(keyword);
         List<UserDto> dtoList = (List<UserDto>) users.stream().map(user -> entityToDto(user));
-        return  dtoList;
-
-
-//        User user = this.userRepository.findById(keyword).orElseThrow(() -> new ResourceNotFoundException("User", "user Id", "userId"));
-//        return this.entityToDto(userd);
-
-
-    }
-
-    @Override
-    public List<UserDto> searchUserById(String keyword) {
-        return null;
+        return dtoList;
     }
 
 
