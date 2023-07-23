@@ -1,5 +1,0 @@
-package com.BikkadIT.RestApiCrudOperation.controller;
-
-public class EmployeeController {
-
-}

@@ -1,5 +1,0 @@
-package com.BikkadIT.QueryParamAndPathParam.controler;
-
-public class WelcomeController {
-
-}

@@ -1,5 +1,0 @@
-package com.mantuIT.SpringMvcCrudUsingDataJpa.model;
-
-public class User {
-
-}
