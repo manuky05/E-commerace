@@ -1,15 +1,10 @@
 package com.mantu.electronic.store.ElectronicStore.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.mantu.electronic.store.ElectronicStore.dtos.CategoryDto;
+import lombok.*;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 @Setter
 @Getter
@@ -17,6 +12,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name="products")
+@Builder
 public class Product {
     @Id
     private String productId;
@@ -27,9 +23,14 @@ public class Product {
     private int discountedPrice;
     private int quantity;
     private Date addedDate;
-
     private boolean live;
     private boolean stock;
+    private  String ProductImageName;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="category_id")
+    private Category category;
+
+
 
 
 
