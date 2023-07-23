@@ -1,0 +1,6 @@
+com\mantu\electronic\store\ElectronicStore\Controller\UserControllerTest.class
+com\mantu\electronic\store\ElectronicStore\ElectronicStoreApplicationTests.class
+com\mantu\electronic\store\ElectronicStore\services\UserServiceTest.class
+com\mantu\electronic\store\ElectronicStore\entities\UserTest.class
+com\mantu\electronic\store\ElectronicStore\services\CategoryServiceTest.class
+com\mantu\electronic\store\ElectronicStore\services\productServiceTest.class
